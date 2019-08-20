@@ -59,6 +59,7 @@ html {
 
 article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
   display: block;
+  display: flex;
 }
 
 body {
@@ -74,7 +75,9 @@ body {
 
 
 .footer {
-  position: fixed;
+  display: flex;
+  justify-content: space-around;
+  position: absolute;
   left: 0;
   bottom: 0;
   width: 100%;
@@ -323,10 +326,10 @@ textarea {
 }
 
 fieldset {
-  min-width: 0;
-  padding: 0;
-  margin: 0;
-  border: 0;
+  min-width: 10px black;
+  padding: 10px black;
+  margin: 10px black;
+  border: 10px black;
 }
 
 legend {
@@ -568,6 +571,7 @@ pre code {
 }
 
 .container {
+  display: flex;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;
@@ -2024,9 +2028,11 @@ pre code {
 
 .form-control {
   display: block;
-  width: 100%;
+  width: 30%;
   height: calc(1.5em + 0.75rem + 2px);
   padding: 0.375rem 0.75rem;
+  border: 1px black;
+  
   font-size: 0.875rem;
   font-weight: 400;
   line-height: 1.5;
